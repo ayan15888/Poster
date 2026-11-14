@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Aneurysm Detection Poster</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F3A;--blue:#1D4ED8;--ink:#111827;--mute:#4B5563;--line:#D5DCE8;--bg:#EEF2F8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:3840px;height:2160px;background:var(--bg);font-family:'Inter',system-ui,sans-serif;color:var(--ink);overflow:hidden}
+.poster{width:3840px;height:2160px;display:flex;flex-direction:column}
+header{height:250px;background:var(--navy);color:#fff;display:flex;align-items:center;gap:56px;padding:0 80px;border-bottom:10px solid var(--blue)}
+header .logo{height:170px;background:#fff;border-radius:16px;padding:10px 18px}
+header .t{flex:1}
+header .grp{white-space:nowrap;display:inline-block;font-size:26px;font-weight:700;letter-spacing:5px;text-transform:uppercase;background:var(--blue);padding:8px 24px;border-radius:40px;margin-bottom:16px}
+header h1{white-space:nowrap;font-size:104px;line-height:1;font-weight:800;letter-spacing:-2px}
+header h1 span{color:#8FB4FF}
+header .p{display:flex;gap:56px;font-size:28px;line-height:1.35}
+header .p b{display:block;font-size:36px;font-weight:700}
+header .p small{display:block;font-size:22px;letter-spacing:3px;text-transform:uppercase;color:#9FB3D1;margin-bottom:6px}
+header .p .sep{border-left:2px solid #34506F;padding-left:56px}
+main{flex:1;min-height:0;display:flex;gap:44px;padding:44px 80px 48px}
+.col{display:flex;flex-direction:column;gap:28px;min-width:0}
+.card{background:#fff;border:2px solid var(--line);border-radius:22px;padding:28px 36px;display:flex;flex-direction:column;gap:16px}
+.h{display:flex;align-items:center;gap:20px}
+.h i{font-style:normal;background:var(--blue);color:#fff;font-weight:800;font-size:34px;width:62px;height:62px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.h h2{font-size:54px;font-weight:800;letter-spacing:.5px;color:var(--navy);text-transform:uppercase}
+ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+li{font-size:35px;line-height:1.28;padding-left:32px;position:relative}
+li::before{content:"";position:absolute;left:0;top:.5em;width:14px;height:14px;border-radius:4px;background:var(--blue)}
+p{font-size:35px;line-height:1.32}
+.lab{font-size:26px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--blue)}
+.hl{background:var(--navy);color:#fff;border-radius:22px;padding:26px 36px;font-size:34px;line-height:1.3;font-weight:600}
+.hl span{color:#8FB4FF}
+.fig{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:8px;min-height:0}
+.fig img{width:100%;min-height:0;flex:1;object-fit:contain;display:block}
+.cap{font-size:28px;line-height:1.3;color:var(--mute);padding:0 6px 4px}
+.cap b{color:var(--navy)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.st{background:var(--navy);color:#fff;border-radius:16px;padding:20px 12px;text-align:center}
+.st b{display:block;font-size:68px;font-weight:800;line-height:1}
+.st span{font-size:24px;color:#B9C8E0;letter-spacing:1px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.step{background:var(--bg);border-radius:14px;padding:16px 18px;border-top:6px solid var(--blue)}
+.step b{display:block;font-size:30px;font-weight:700;color:var(--navy);margin-bottom:6px}
+.step span{font-size:25px;line-height:1.25;color:var(--mute);display:block}
+</style></head><body><div class="poster">
+<header>
+ <img class="logo" src="assets/image.png" alt="Assam Down Town University">
+ <div class="t"><div class="grp">Group no. 8</div><h1>ANEURYSM DETECTION <span>USING CT IMAGES</span></h1></div>
+ <div class="p">
+  <div><small>Presented by MCA 3rd</small><b>Md Ayan Qurashi</b>ADTU/0/2025-27/MCAM/030<b style="margin-top:12px">Sanjay Barman</b>ADTU/0/2025-27/MCAM/027</div>
+  <div class="sep" style="align-self:center"><small>Under the guidance of</small><b>Dr. Chayanika Sharma</b></div>
+ </div>
+</header>
+<main>
+ <!-- LEFT -->
+ <div class="col" style="width:860px">
+  <div class="card"><div class="h"><i>01</i><h2>Introduction</h2></div>
+   <ul><li>A brain aneurysm is a weak, bulging spot in a brain blood vessel</li>
+   <li>Rupture causes bleeding in the brain (subarachnoid hemorrhage)</li>
+   <li>Early detection with CT, MRI and angiography reduces the risk of rupture</li></ul></div>
+  <div class="card" style="background:#E7EEFC;border-color:var(--blue);border-width:3px"><div class="h"><i>02</i><h2>Research Gap</h2></div>
+   <p>Pre-trained medical foundation models as feature extractors for aneurysm detection are largely unexplored.</p>
+   <p><b style="color:var(--blue)">Key gap:</b> no reviewed study has used a foundation model trained on medical CT images for brain aneurysm detection.</p></div>
+  <div class="card" style="flex:1;min-height:0"><div class="h"><i>03</i><h2>Problem &amp; Objective</h2></div>
+   <div class="lab">Problem</div>
+   <p>Automatically detect the presence and location of intracranial aneurysms across 13 anatomical locations from brain CT.</p>
+   <div class="lab">Objectives</div>
+   <ul><li>Test pre-trained AI models</li><li>Extract clues from brain scans</li><li>Build a tool to label aneurysms</li></ul></div>
+  <div class="hl">One shared <span>EfficientNet-B4</span> brain, three specialists: <span>diagnosis</span>, <span>artery</span> and <span>heatmap location</span>.</div>
+ </div>
+
+ <!-- CENTRE -->
+ <div class="col" style="width:1540px">
+  <div class="card" style="flex:1;min-height:0;gap:16px"><div class="h"><i>05</i><h2>Methodology</h2></div>
+   <div class="fig" style="flex:1"><img src="assets/method1.jpg"><div class="cap"><b>Stages 1–3:</b> CT preparation → 3D to 2D views → shared model with three heads</div></div>
+   <div class="fig" style="flex:1"><img src="assets/method2.jpg"><div class="cap"><b>Stages 4–7:</b> training → common-sense check → output to doctor → validation and testing</div></div>
+  </div>
+  <div class="card" style="gap:16px;padding:26px 30px"><div class="h"><i>06</i><h2>Implementation</h2></div>
+   <div class="steps">
+    <div class="step"><b>1 Prepare data</b><span>Sort slices, vessel window, crop Circle of Willis, 3-view stack</span></div>
+    <div class="step"><b>2 Build model</b><span>Pretrained EfficientNet-B4 with three heads</span></div>
+    <div class="step"><b>3 Train</b><span>Combined loss, focal loss, two-phase learning</span></div>
+    <div class="step"><b>4 Sanity check</b><span>Artery and heatmap scores × overall score</span></div>
+    <div class="step"><b>5 Test</b><span>Thresholds on validation; test set used once</span></div>
+   </div></div>
+ </div>
+
+ <!-- RIGHT -->
+ <div class="col" style="flex:1">
+  <div class="card" style="flex:1;min-height:0;gap:18px"><div class="h"><i>04</i><h2>Dataset &amp; EDA</h2></div>
+   <p style="font-size:34px">Thousands of brain imaging series (CTA, MRA, MRI), each labelled for aneurysm presence across 13 vessel locations, with coordinates for positive cases.</p>
+   <div class="stats">
+    <div class="st"><b>4,348</b><span>SERIES</span></div><div class="st"><b>4</b><span>MODALITIES</span></div>
+    <div class="st"><b>13</b><span>LOCATIONS</span></div><div class="st"><b>86.2%</b><span>MASK MATCH</span></div></div>
+   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;height:480px">
+    <div class="fig"><img src="assets/chartA.png"><div class="cap"><b>CTA</b> has the most series</div></div>
+    <div class="fig"><img src="assets/chartB.png"><div class="cap"><b>CTA</b> positive rate is highest: 53.8%</div></div></div>
+   <div class="fig" style="flex:1"><img src="assets/locations.png"><div class="cap"><b>ACom</b> is the most common site (8.35%), followed by the left supraclinoid ICA (7.59%)</div></div>
+   <div style="display:grid;grid-template-columns:1fr 1.15fr;gap:16px;height:420px">
+    <div class="fig"><img src="assets/scan1.png" style="background:#000;border-radius:8px"><div class="cap">Sample brain scan</div></div>
+    <div class="fig"><img src="assets/donut.png"><div class="cap"><b>86.2%</b> exact label match in 188 checks</div></div></div>
+  </div>
+ </div>
+</main></div></body></html>
